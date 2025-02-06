@@ -52,14 +52,11 @@
     <div class="container">
         <h1>Payment Successful 🎉</h1>
         <p>Thank you for your purchase!</p>
-        <button onclick="location.href ='blancoapp://blancoapp.com/OrderHistoryPage'">Go to App</button>
-        <a href="intent://blancoapp.com/OrderHistoryPage#Intent;scheme=blancoapp;package=com.yourapp.package;end;"> Go To App</a>
+        <button onclick="redirectToApp()">Go to App</button>
     </div>
     <script>
         function redirectToApp() {
-            setTimeout(function() {
-                window.location.href = "blancoapp://blancoapp.com/OrderHistoryPage";
-            }, 100);
+            window.location.href = "blancoapp://blancoapp.com/PaymentSuccessPage";
         }
     </script>
 </body>
