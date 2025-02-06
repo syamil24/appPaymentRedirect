@@ -57,7 +57,9 @@
     </div>
     <script>
         function redirectToApp() {
-            window.location.href = "blancoapp://blancoapp.com/OrderHistoryPage";
+            setTimeout(function() {
+                window.location.href = "blancoapp://blancoapp.com/OrderHistoryPage";
+            }, 100);
         }
     </script>
 </body>
